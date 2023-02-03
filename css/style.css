@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@700&display=swap');
+
+:root {
+    --fontHeading: 'PT Sans', sans-serif;
+    --fontParagrafo: 'Open Sans', sans-serif;
+    --corPreto: #000;
+    --corCiano: #1cebfa;
+    --corBranco: #fff;
+    --corCinza: #333;
+    --corRosa: #fd1b62;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    background-color: var(--corPreto);
+    font-family: var(--fontParagrafo);
+    color: var(--corBranco);
+    position: relative; 
+    min-height: 100vh;
+    
+}
+
+.container {
+    position: relative;
+    height: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7rem 3rem;
+    margin-top: 6rem;
+} 
+@media (min-width: 768px) {
+    .container {
+        height: 80vh;
+        gap: 10rem 3rem;
+    }
+}
+.titulo {
+    font-family: var(--fontHeading);
+    color: var(--corCiano);
+    text-align: center;
+    margin: 0;
+}
+
+.card {
+    position: relative;
+    width: 30rem;
+    height: 15rem;
+    background-color: var(--corCinza);
+    transition: 0.5s;
+}
+.card:hover {
+    height: 45rem;
+}
+.card__lineas {
+    position: absolute;
+    inset: 0;
+    background-color: var(--corCinza);
+    overflow: hidden;
+}
+.card__lineas::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60rem;
+    height: 10rem;
+    background: linear-gradient(transparent, var(--corCiano), var(--corCiano), var(--corCiano), transparent);
+    animation: animacao 4s linear infinite;
+    animation-play-state: paused;
+}
+.card:hover .card__lineas::before {
+    animation-play-state: running;
+}
+@keyframes animacao {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.card__lineas::after {
+    content: '';
+    position: absolute;
+    inset: 0.6rem;
+    background-color: var(--corPreto);
+} 
+.img {
+    position: absolute;
+    top: -6rem;
+    left: 50%;
+    width: 12rem;
+    height: 12rem;
+    transform: translateX(-50%);
+    background-color: var(--corCinza);
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover .img {
+    top: 2.5rem;
+}
+.img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50rem;
+    height: 10rem;
+    transform: translate(-50%, -50%);
+    background: linear-gradient( transparent, var(--corRosa), var(--corRosa), var(--corRosa), transparent);
+    animation: animacaoImg 6s linear infinite;
+    animation-play-state: paused;
+}
+.card:hover .img::before {
+    animation-play-state: running;
+}
+@keyframes animacaoImg {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+.img::after {
+    content: '';
+    position: absolute;
+    inset: 0.6rem;
+    background-color: var(--corPreto);
+}
+
+.img svg {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.card:hover .img svg {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.conteudo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.conteudo .detalhes {
+    padding: 3rem 2rem;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(19rem);
+}
+.card:hover .conteudo .detalhes {
+    transform: translateY(0px);
+}
+
+.detalhes h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--corCiano);
+    line-height: 1.5rem;
+}
+
+.detalhes p {
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.detalhes a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--corCiano);
+    color: var(--corPreto);
+    margin-top: 1rem;
+    font-weight:700; 
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card:hover .detalhes p,
+.card:hover .detalhes a {
+    opacity: 1;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    line-height: 1rem;
+    color: var(--corCiano);
+    font-size: 1.4rem;
+}
+.footer span {
+    font-weight: 700;
+}
+
+

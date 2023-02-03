@@ -15,10 +15,6 @@ Projeto criado com o objetivo de colocar em prática os conhecimentos em CSS e H
 
   <br>
 
-  <video width="320" height="240" autoplay>
-    <source src="" type="video/mp4">
-  </video>
-
 </div>
 
 <br>
@@ -92,7 +88,7 @@ git clone https://github.com/EduarAponte/Card-Animado-com-CSS.git
 
 ```
 
-Assitir o tutorial no  [![YouTube](https://img.shields.io/static/v1?label=|&message=YouTube&color=DE3729&style=for-the-badge&logo=YouTube&logo-color=white)](https://www.youtube.com/channel/UCQmEVT0Cj2UsqLdjZJzQ-FA)
+Assitir o tutorial no  [![YouTube](https://img.shields.io/static/v1?label=|&message=YouTube&color=DE3729&style=for-the-badge&logo=YouTube&logo-color=white)](https://youtu.be/iEHLG1osEIA)
 
 <br>
 

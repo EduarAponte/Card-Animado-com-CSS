@@ -78,7 +78,7 @@ O principal objetivo do projeto é colocar em prática os conhecimentos em CSS p
 
 # Como Testar
 
-Você pode acessar o projeto [![Netlify Status](https://api.netlify.com/api/v1/badges/e417a718-c0c7-45e3-97a9-a7b79149be7f/deploy-status)](https://app.netlify.com/sites/card-animacao-css/deploys) ou [![GitHub](https://img.shields.io/badge/GitHub-4B0082?style=for-the-badge&logo=github&logoColor=white&style="border-radius:65px;)](https://eduaraponte.github.io/EduarAponte-)
+Você pode acessar o projeto [![Netlify Status](https://api.netlify.com/api/v1/badges/e417a718-c0c7-45e3-97a9-a7b79149be7f/deploy-status)](https://card-animacao-css.netlify.app) ou [![GitHub](https://img.shields.io/badge/GitHub-4B0082?style=for-the-badge&logo=github&logoColor=white&style="border-radius:65px;)](https://eduaraponte.github.io/EduarAponte-)
 
 Ou rodar na sua maquina.
 
@@ -88,8 +88,12 @@ git clone https://github.com/EduarAponte/Card-Animado-com-CSS.git
 
 ```
 
-Assitir o tutorial no  [![YouTube](https://img.shields.io/static/v1?label=|&message=YouTube&color=DE3729&style=for-the-badge&logo=YouTube&logo-color=white)](https://youtu.be/iEHLG1osEIA)
+### Assitir o tutorial
 
+<a href="https://youtu.be/iEHLG1osEIA" target="_blank">
+  <img src="assets/to_readme/play.png" 
+  alt="Assistir Tutorial no YouTube" width="25%" height="25%" />
+</a>
 <br>
 
 # Observações

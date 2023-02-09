@@ -7,14 +7,8 @@ Projeto criado com o objetivo de colocar em prática os conhecimentos em CSS e H
 
 <div align="center">
 
-  <img src="https://user-images.githubusercontent.com/92584428/216661344-82aa858e-31b4-46d1-9102-516c8d1eba7e.png" width="30%" height="30%" />
-
-  <br>
-
-  <img src="https://user-images.githubusercontent.com/92584428/216661367-333dc91c-0201-48d8-b64d-cf1d81792491.png" width="30%" height="30%" /> 
-
-  <br>
-
+  <img src="https://user-images.githubusercontent.com/92584428/216661344-82aa858e-31b4-46d1-9102-516c8d1eba7e.png" style="margin: 0 10px;" width="35%" height="35%" />
+  <img src="https://user-images.githubusercontent.com/92584428/216661367-333dc91c-0201-48d8-b64d-cf1d81792491.png" style="margin: 0 10px;" width="35%" height="35%" /> 
 </div>
 
 <br>
